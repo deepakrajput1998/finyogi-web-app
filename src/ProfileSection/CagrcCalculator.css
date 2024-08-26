@@ -1,0 +1,46 @@
+.bg--2{
+    background-color: #D0CEE6;
+}
+
+.cagr--banner{
+    width: 442px;
+    height: 493px;
+    position: absolute;
+    top: 0px;
+    right: 129px;
+}
+
+.cagr--banner > img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:991px) {
+
+    .banner--left.cagr--left{
+        width: calc(100% - 118px);
+    }
+    .cagr--banner{
+        width: 118px;
+        position: relative;
+        right: 0px;
+        height: unset;
+    }
+
+    .cagr--banner img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner--section.bg--2{
+        background-color: transparent;
+        padding: 0px 15px;
+    }
+    
+    .sm-bg--2{
+        background-color: #D0CEE6;
+        border-radius: 10px;
+    }
+}

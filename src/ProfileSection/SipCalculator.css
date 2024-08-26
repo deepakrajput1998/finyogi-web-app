@@ -1,0 +1,119 @@
+.banner--section{
+    overflow: hidden;
+}
+
+.mb-37px{
+    margin-bottom: 37px;
+}
+
+.bg--1{
+    background-color: #9AEEAF;
+}
+
+.sip--calculator-container{
+    height: 100%;
+}
+
+.calc--search {
+    width: min(680px, 100%);
+    margin: 0 auto;
+    padding: 22px 0px;
+}
+
+.slider--field-section{
+    width: min(663px,100%);
+    margin: 0 auto 44px;
+}
+
+.slider--header{
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+.banner--inner{
+    display: flex;
+    width: min(1211px,100%);
+    margin: 0 auto;
+    padding: 0 15px;
+    align-items: center;
+    height: inherit;
+}
+
+.banner--left{
+    width: calc(100% - 654px);
+}
+
+.banner--title{
+    font-size: 26px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 27px;
+}
+
+.banner--sub-title{
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 400;
+    display: block;
+    width: min(584px, 100%);
+}
+
+.banner--image{
+    position: absolute;
+    top: 0px;
+    right: -40px;
+    width: 654px;
+    height: 524px;
+}
+
+.banner--image > img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:991px) {
+
+    .banner--section.bg--1{
+        background-color: transparent;
+        padding: 0px 15px;
+    }
+    
+    .sm-bg--1{
+        background-color: #9AEEAF;
+        border-radius: 10px;
+    }
+
+    .banner--left{
+        width: calc(100% - 161px);
+    }
+
+    .banner--image{
+        position: relative;
+        right: -13px;
+        height: unset;
+        width: 181px;
+    }
+
+    .banner--title{
+        font-size: 21px;
+        line-height: 21px;
+        margin-bottom: 8px;
+    }
+
+    .banner--sub-title{
+        font-size: 13px;
+        line-height: 18px;
+        width: min(200px,100%);
+    }
+
+}

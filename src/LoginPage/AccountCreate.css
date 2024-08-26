@@ -1,0 +1,7 @@
+.form--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 42px;
+    margin-bottom: 42px;
+}

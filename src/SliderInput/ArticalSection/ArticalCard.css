@@ -1,0 +1,125 @@
+.card--banner{
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.card--banner > img{
+    display: block;
+    object-fit: contain;
+    width: inherit;
+    height: inherit;
+}
+
+.card--title{
+    margin-bottom: 14px;
+}
+
+.card--title > span{
+    font-size: 20px;
+    line-height: 28px;
+    color: #180E19;
+    font-weight: 700;
+    display: block;
+}
+
+.card--writer-name{
+    margin-bottom: 23px;
+}
+
+.card--writer-name > span{
+    font-size: 18px;
+    line-height: 18px;
+    color: #909090;
+    font-weight: 400;
+    display: block;
+}
+
+.card--time-section{
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+.card--time-section > span{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #69BDFD;
+    display: block;
+}
+
+.card--time-section time{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #909090;
+    display: block;
+    position: relative;
+    padding-left: 14px;
+}
+
+.card--time-section time::before{
+    --dot-width:8px;
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: var(--dot-width);
+    height: var(--dot-width);
+    border-radius: var(--dot-width);
+    background-color: #909090;
+}
+
+.btn--video{
+    --video-btn-size:109px;
+    width: var(--video-btn-size);
+    height: var(--video-btn-size);
+    border-radius: var(--video-btn-size);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.btn--video > img{
+    display: block;
+    object-fit: contain;
+    position: relative;
+    left: 6px;
+}
+
+@media (max-width:991px) {
+    .btn--video{
+        --video-btn-size:39px
+    }
+
+    .btn--video img.innr--arr{
+        width: 23px;
+        left: 4px;
+    }
+
+    .card--title > span{
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+
+    .card--writer-name{
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width:768px) {
+    .card--time-section > span,
+    .card--time-section time{
+        font-size: 12px;
+        line-height: 12px;
+    }
+}

@@ -1,0 +1,157 @@
+.quick--top--section{
+    background-color: #E3EEFF;
+    padding: 59px 0px 102px;
+}
+
+.quiz--header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 0px 42px;
+}
+
+.quiz--header-text{
+    font-size: 24px;
+    line-height: 24px;
+    color: #1C1C1C;
+    font-weight: 600;
+}
+
+.btn--seeAll{
+    font-size: 21px;
+    line-height: 21px;
+    color: #0D5593;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0px;
+}
+
+.quiz--wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz--top-left{
+    width: min(648px,100%);
+}
+
+.quiz--top-left img{
+    display: block;
+    object-fit: contain;
+    margin: 0 auto 30px;
+}
+
+.big--text{
+    font-size: 75px;
+    line-height: 75px;
+    color: var(--typo-color-5);
+    font-weight: 800;
+    display: block;
+    margin-bottom: 36px;
+}
+
+.small--text{
+    font-size: 24px;
+    color: var(--typo-color-14);
+    font-weight: 400;
+    display: block;
+}
+
+.quiz--top-right{
+    width: min(446px,100%);
+}
+
+.card--dropdown{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 0px 0px #DDD;
+    padding: 55px 29px;
+    row-gap: 33px;
+}
+
+.btn--startQuiz{
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 5px;
+    display: block;
+    background-color: var(--typo-color-5);
+    border: 1px solid var(--typo-color-5);
+    padding: 22px 10px;
+}
+
+@media (max-width:768px) {
+    .quiz--wrapper .quiz--top-left{
+        display: none;
+    }
+
+    .quiz--wrapper .quiz--top-right{
+        width: 100%;
+    }
+
+    .quiz--his-sm{
+        background-color: transparent;
+        padding: 0px;
+    }
+
+    .quiz--his-sm .card--dropdown{
+        padding: 0px;
+        background-color: transparent;
+        row-gap: 6px;
+    }
+
+    .quiz--his-sm .btn--startQuiz{
+        margin-top: 10px;
+    }
+
+    .quiz--his-sm .quiz--wrapper{
+        padding: 15px;
+        background-color: #D9E3FF;
+        border-radius: 15px;
+    }
+
+    .quiz--header{
+        margin: 23px 0px 13px;
+    }
+
+    .quiz--header-text{
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .btn--seeAll{
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .quiz--title{
+        font-size: 17px;
+        line-height: normal;
+    }
+
+    .quiz--date-time{
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .quiz--point .rank--point{
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .quiz--card-header{
+        margin-bottom: 10px;
+    }
+
+    .quiz--btn button{
+        font-size: 17px;
+        line-height: 17px;
+    }
+
+    .quiz--btn{
+        column-gap: 20px;
+    }
+}

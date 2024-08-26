@@ -1,0 +1,40 @@
+.rc--select{
+    position: relative;
+}
+
+.rc--select .css-13cymwt-control,
+.rc--select .css-13cymwt-control:hover,
+.rc--select .css-t3ipsp-control,
+.rc--select .css-t3ipsp-control:hover{
+    border: 1px solid #EEEFF2;
+    box-shadow: none;
+}
+
+.rc--select .css-13cymwt-control,
+.rc--select .css-t3ipsp-control{
+    border-radius: 14px;
+}
+
+.rc--select .css-1jqq78o-placeholder{
+    font-size: 17px;
+    line-height: 17px;
+    color: #111827;
+}
+
+.rc--select .css-tj5bde-Svg{
+    fill: #6B7280;
+}
+
+.rc-select-icon{
+    position: absolute;
+    top: 20px;
+    left: 19px;
+}
+
+.rc--select .css-1fdsijx-ValueContainer{
+    padding: 18px 8px 18px 50px;
+}
+
+.rc--select .css-1u9des2-indicatorSeparator{
+    display: none;
+}

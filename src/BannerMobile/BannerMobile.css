@@ -1,0 +1,173 @@
+.banner--card{
+    --width:593px;
+    background-color:#DAF4FF;
+    padding: 52px 0px;
+}
+
+.banner--card-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: min(1305px,100%);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.banner--card-left{
+    width: calc(100% - var(--width));
+}
+
+.banner--card-right{
+    width: var(--width);
+}
+
+.banner--content-text{
+    font-size: 54px;
+    line-height: 72px;
+    font-weight: 700;
+    color: black;
+    display: block;
+    margin-bottom: 35px;
+}
+
+.banner--content-sub-text{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000;
+    width: min(587px,100%);
+    display: block;
+    margin-bottom: 27px;
+}
+
+.banner--card-right > img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.btn--download-app{
+    --color-bg-border: #199CD6;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: var(--color-bg-border);
+    border: 1px solid var(--color-bg-border);
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 19px 39px;
+    cursor: pointer;
+}
+
+.banner--download-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.banner--custumer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.cutumer--items{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.cutumer--items:first-child{
+    border-right: 1px solid #1d191f;
+}
+
+.cutumer--items:last-child{
+    padding-left: 20px;
+}
+
+.cutumer--items > img{
+    display: block;
+    object-fit: contain;
+}
+
+.cutumer--items span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px; 
+    color: #1D191F;
+    display: block;
+    width: 170px;
+}
+
+@media (max-width:991px) {
+    .banner--card-left,
+    .banner--card-right{
+        width: 100%;
+    }
+
+    .banner--card-left{
+        order: 2;
+    }
+
+    .banner--content-text{
+        font-size: 36px;
+        line-height: 46px;
+        width: min(404px,100%);
+        margin-bottom: 15px;
+    }
+
+    .banner--card-right{
+        margin-bottom: 20px;
+    }
+
+    .banner--content-sub-text{
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: normal;
+    }
+
+    .btn--download-app{
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: normal;
+        padding: 11px 20px;
+    }
+
+    .btn--download-app img{
+        width: 21px;
+    }
+
+    .cutumer--items span{
+        font-size: 13px;
+        line-height: 16px;
+        width: 116px;
+    }
+
+    .cutumer--items > img{
+        width: 33px;
+        height: 33px;
+    }
+
+    .banner--card-right > img{
+        height: 249px;
+    }
+}
+
+@media (max-width:768px) {
+    .web-play{
+        display: none;
+    }
+}
+
+@media (max-width:350px) {
+    .cutumer--items:last-child{
+        padding-left: 0px;
+    }
+}

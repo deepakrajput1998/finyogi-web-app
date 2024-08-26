@@ -1,0 +1,87 @@
+.qzr-pos{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 6px 10.9px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 0px 0px 12px 12px;
+    padding: 24px 15px;
+}
+
+.btn--pre-qr {
+    background-color: transparent;
+    border: 0px;
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+}
+
+.btn--pre-qr img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.sq--text{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    display: block;
+    color: #1C1C1C;
+    margin: 0 auto;
+}
+
+.sq--mnw{
+    position: relative;
+}
+
+.btn-mn-dot{
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.btn-mn-dot img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.sq--mnw-container{
+    border-radius: 6px;
+    background: var(--Backgrounds-Primary, #FFF);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    padding: 4px 2px;
+    position: absolute;
+    right: 0px;
+    width: max-content;
+}
+.sq--mnw-item{
+    font-size: 12px;
+    line-height: 12px;
+    color: #25213B;
+    display: block;
+    border-radius: 4px;
+    background-color: #ebebeb;
+    width: 100%;
+    padding: 8px 5px;
+}
+
+.sq--mnw-item.it--active{
+    background-color: #A8D7FF;
+}
+.sq--mnw-item.it--end{
+    background-color: transparent;
+    color: #D30000;
+    text-align: center;
+}

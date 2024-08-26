@@ -1,0 +1,17 @@
+.verfiy--input{
+    display: flex;
+    column-gap: 42px;
+    width: 478px;
+}
+
+.verfiy--input .input--field{
+    height: 107px;
+    text-align: center;
+}
+
+.count--section > span{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--typo-color-5);
+}

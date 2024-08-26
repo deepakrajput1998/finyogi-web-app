@@ -1,0 +1,51 @@
+.bg--3{
+    background-color: #BFF3CC;
+}
+
+.present-value-banner{
+    width: 421px;
+    height: 482px;
+    position: absolute;
+    top: 0px;
+    right: 129px;
+}
+
+.present-value-banner > img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:991px) {
+    .calc-ca{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        font-weight: normal;
+    }
+    .banner--left.pr-valu-left{
+        width: calc(100% - 121px);
+    }
+    .present-value-banner{
+        width: 121px;
+        position: relative;
+        right: 0px;
+        height: unset;
+    }
+
+    .present-value-banner img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner--section.bg--3{
+        background-color: transparent;
+        padding: 0px 15px;
+    }
+    
+    .sm-bg--3{
+        background-color: #BFF3CC;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,53 @@
+.text--white{
+    --color:#ffffff;
+    --font-size:13px;
+    --text-weight:600px;
+    --squre-color:#ffffff;
+    --squre-size:8px;
+
+}
+
+.text--black{
+    --color:#37393F;
+    --font-size:18px;
+    --text-weight:500px;
+    --squre-color:#0030AD;
+    --squre-size:12px;
+
+}
+
+.badge--tile{
+    font-size: var(--font-size);
+    line-height: var(--font-size);
+    color: var(--color);
+    font-weight: var(--text-weight);
+    position: relative;
+    padding-left: 14px;
+    display: inline-block;
+}
+
+.badge--tile::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    background-color: var(--squre-color);
+    width: var(--squre-size);
+    height: var(--squre-size);
+    transform: translateY(-50%);
+}
+
+@media (max-width:991px) {
+    .text--white{
+        --font-size:6px;
+        --squre-size: 3px;
+    }
+
+    .badge--tile{
+        padding-left: 10px;
+    }
+
+    .badge--tile.text--black{
+        padding-left: 18px;
+    }
+}

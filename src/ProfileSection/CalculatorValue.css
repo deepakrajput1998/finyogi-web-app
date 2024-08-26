@@ -1,0 +1,49 @@
+.card--calc-value{
+    --font-title:26px;
+    --font-value:22px;
+    --font-ca:16px;
+    border-radius: 16px;
+    background: #ECF1FF;
+    padding: 25px 15px;
+}
+
+.calc-value-title,
+.calc-value-text,
+.calc-ca,
+.calc-ia{
+    display: block;
+    text-align: center;
+    color: #000000;
+}
+
+.calc-value-title{
+    font-size: var(--font-title);
+    line-height: var(--font-title);
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+
+.calc-value-text{
+    font-size: var(--font-value);
+    line-height: var(--font-value);
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.calc-ca,
+.calc-ia{
+    font-size: var(--font-ca);
+    line-height: var(--font-ca);
+    font-weight: 900;
+}
+
+.calc-ca{
+    margin-bottom: 5px;
+}
+
+@media (max-width:991px) {
+    .card--calc-value{
+        --font-title: 21px;
+        --font-value: 14px;
+    }
+}

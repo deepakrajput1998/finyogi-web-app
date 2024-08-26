@@ -1,0 +1,41 @@
+.slider--field{
+    margin-bottom: 20px;
+}
+
+.question--text{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 900;
+    color: #0F172A;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form--con{
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    border-radius: 7px;
+    outline: 0px;
+    padding: 14px 11px;
+    color: #000000;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.form--con::placeholder{
+    color: #C4C4C4;
+}
+
+.range--input{
+    width: 100%;
+}
+
+@media (max-width:991px) {
+    .question--text{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

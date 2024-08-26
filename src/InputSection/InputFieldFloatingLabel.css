@@ -1,0 +1,48 @@
+.floating--label{
+    --label-font:24px;
+    --input-font:24px;
+    position: relative;
+    width: 100%;
+}
+
+.floating--label label{
+    font-size: var(--label-font);
+    line-height: var(--label-font);
+    color: var(--typo-color-3);
+    cursor: pointer;
+    position: absolute;
+    top: 23px;
+    left: 16px;
+    background-color: #ffffff;
+    transition: 0.2s ease-out;
+}
+
+.floating--label input{
+    font-size: var(--input-font);
+    line-height: var(--input-font);
+    color: var(--typo-color-3);
+    border: 1px solid var(--typo-color-2);
+    display: block;
+    width: 100%;
+    padding: 18px 15px;
+    border-radius: 9px;
+    outline: none;
+}
+
+.floating--label input::placeholder{
+    visibility: hidden;
+}
+
+.floating--label:has(input:focus) label,
+.floating--label:has(input:not(:placeholder-shown)) label{
+    --label-font: 16px;
+    top: -7px;
+    padding: 0 5px;
+    left: 10px;
+}
+
+.floating--label input[type="number"]::-webkit-outer-spin-button,
+.floating--label input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

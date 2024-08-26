@@ -1,0 +1,83 @@
+.download--app-banner{
+    --font-size:20px;
+    --font-size-sub:16px;
+    --size:378px;
+    background-color: #F2F1FF;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.title-app{
+    font-size: var(--font-size);
+    line-height: var(--font-size);
+    color: var(--typo-color-black);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.title-sub-app{
+    font-size: var(--font-size-sub);
+    line-height: 20px;
+    color: var(--typo-color-12);
+    width: min(279px,100%);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.google--play{
+    display: block;
+    object-fit: contain;
+    box-sizing: 3px;
+}
+
+.download--app-img{
+    width: var(--size);
+    position: absolute;
+    top: -60px;
+    right: 30px;
+}
+
+.download--app-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dp-app-left{
+    width: calc(100% - var(--size));
+}
+
+@media (max-width:768px) {
+    .download--app-banner{
+        --font-size:16px;
+        --font-size-sub:11px;
+        --size:250px;
+    }
+
+    .download--app-img{
+        top: -25px;
+        right: 15px;
+    }
+
+    .title-sub-app{
+        line-height: 14px;
+    }
+
+    .google--play{
+        display: none;
+    }
+}
+
+@media (max-width:425px) {
+    .download--app-banner{
+        --size:150px;
+    }
+
+    .download--app-img{
+        top: -10px;
+    }
+}

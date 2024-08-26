@@ -1,0 +1,271 @@
+.artical--banner{
+    margin-bottom: 33px;
+}
+
+.artical--banner > img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.book--title{
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.book--author{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #455400;
+    display: block;
+    margin-bottom: 19px;
+}
+
+.artical--book-section{
+    --width:129px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.book--image{
+    width: var(--width);
+    position: relative;
+    top: -170px;
+}
+
+.book--right{
+    width: calc(100% - var(--width));
+    padding-left: 15px;
+}
+
+.btn--play-book{
+    display: flex;
+    align-items: center;
+    column-gap: 27px;
+    border: 1px solid #C7C7C7;
+    background-color: transparent;
+    padding: 9px 36px 9px 9px;
+    border-radius: 50px;
+    margin-bottom: 19px;
+}
+
+.btn--play-book span{
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.play--sec{
+    --width:43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var( --width);
+    height: var( --width);
+    border-radius: var( --width);
+    background-color: #EAEAEA;
+}
+
+.play--sec img{
+    display: block;
+    object-fit: contain;
+}
+
+.book--summery-wrapper{
+    position: relative;
+}
+
+.book--summery-heading{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #1C1C1C;
+    margin-bottom: 15px;
+}
+
+.book--summery-info{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #2E2E2E;
+}
+
+.book--summery-inner{
+    margin-bottom: 38px;
+}
+
+.hider{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 259px;
+    bottom: 0px;
+    background: linear-gradient(181deg, rgba(255, 255, 255, 0.81) -3.5%, #FFF 62.52%);
+}
+
+.btn--read-more{
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #000000;
+    border-radius: 35px;
+    border: 1px solid #ACACAC;
+    background-color: #FFF;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(251px, 100%);
+    padding: 24px 10px;
+    cursor: pointer;
+}
+
+.section--trending{
+    margin-bottom: 139px;
+}
+
+.trending--header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(1306px,100%);
+    margin: 0 auto 31px;
+}
+
+.trending--header span{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #252525;
+}
+
+.btn--see-all{
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #0D5593;
+    background-color: transparent;
+    border: 0px;
+}
+
+.book--section-slide {
+    overflow-x: auto;
+    width: min(1400px, 100%);
+    margin-left: auto;
+    scroll-behavior: smooth;
+}
+
+.book--section-slide::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+.slide--book{
+    display: flex;
+    column-gap: 36px;
+    padding: 0 15px;
+}
+
+.book--items{
+    width: 292px;
+    min-width: 292px
+}
+
+.book--img{
+    width: 100%;
+}
+
+.book--img img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.book--name{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #2F2F2F;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.book-author{
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #455400;
+    display: block;
+}
+
+.online--text{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #1C1C1C;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.online--section{
+    margin-bottom: 84px;
+    display: flex;
+    column-gap: 24px;
+}
+
+@media (max-width:991px) {
+    .trending--header{
+        padding: 0 15px;
+    }
+
+    .book--image,
+    .book--right{
+        width: 100%;
+        position: unset;
+    }
+
+    .artical--book-section{
+        margin-top: -120px;
+    }
+
+    .book--image{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .book--title,
+    .book--author{
+        display: block;
+        text-align: center;
+    }
+
+    .book--right{
+        margin-top: 10px;
+    }
+
+    .book--summery-heading{
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .book--summery-info{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .btn--read-more{
+        font-size: 14px;
+        line-height: 14px;
+        width: min(133px, 100%);
+        padding: 15px 10px;
+    }
+}

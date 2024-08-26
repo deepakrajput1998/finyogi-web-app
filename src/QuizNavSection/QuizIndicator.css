@@ -1,0 +1,53 @@
+.quiz--indi-section{
+    --border-radious:12px;
+    border-radius: var(--border-radious);
+    border: 1px solid #E6E6E6;
+    display: flex;
+    margin-bottom: 49px;
+}
+
+.checklist--left{
+    width: calc(100% - 59px);
+    padding: 10px 8px;
+    overflow-x: auto;
+}
+
+.checklist--value{
+    display: flex;
+    column-gap: 15px;
+}
+
+.checklist-number{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 13px;
+    color: #ffffff;
+    border-radius: 5px;
+    min-width: 38px;
+    cursor: pointer;
+}
+
+.checklist--section{
+    width: 59px;
+    border-radius: 0px var(--border-radious) var(--border-radious) 0px;
+    background-color: #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color--green{
+    background-color: #0D9312;
+}
+
+.color--yellow{
+    background-color: #FAA510;
+}
+
+.color--pink{
+    background-color: #FF6060;
+}

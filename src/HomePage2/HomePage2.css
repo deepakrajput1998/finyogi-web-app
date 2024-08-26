@@ -1,0 +1,40 @@
+.br-0{
+    border: 0px;
+    padding: 0px;
+}
+
+.ex--cd{
+    --size:29px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 27px;
+}
+
+.ex--cd-item{
+    width: 100%;
+    display: flex;
+    border: 0.75px solid #E3E3E3;
+    padding: 23px 24px;
+}
+
+.ex--cd-right{
+    width: calc(100% - var(--size));
+    padding-left: 14px;
+}
+
+.ex--cd-title{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #37393F;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ex--cd-sub{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #7D7D7D;
+    display: block;
+}

@@ -1,0 +1,43 @@
+.form--textarea{
+    position: relative;
+}
+
+.form--textarea > textarea{
+    font-size: 18px;
+    line-height: 18px;
+    display: block;
+    border: 1px solid #DDD;
+    background-color: #F8F8F8;
+    padding: 21px 28px;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    resize: unset;
+    height: 233px;
+}
+
+.form--textarea > textarea::placeholder{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form--textarea label{
+    --font-size:18px;
+    font-size: var(--font-size);
+    line-height: var(--font-size);
+    color: #37393F;
+    padding: 0px 5px;
+    background-color: #F8F8F8;
+    position: absolute;
+    top: 32px;
+    left: 28px;
+    transform: translateY(-50%);
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.form--textarea:has(textarea:focus) label,
+.form--textarea:has(textarea:not(:placeholder-shown)) label{
+    --font-size:14px;
+    top: 0px;
+}

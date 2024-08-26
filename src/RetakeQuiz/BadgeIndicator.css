@@ -1,0 +1,44 @@
+.badge--indicator{
+    padding: 2px 7px 2px 3px;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 5px;
+    border-radius: 30px;
+}
+
+.badge--indicator.success-badge{
+    background-color: #0D9312;
+}
+
+.badge--indicator.wrong-badge{
+    background-color: #FF3939;
+}
+
+.badge--indicator.skiped-badge{
+    background-color: #FFB800;
+}
+
+.icon--circle{
+    --width:20px;
+    width: var(--width);
+    height: var(--width);
+    border-radius: var(--width);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge--indicator.wrong-badge img{
+    width: 12px;
+    height: 12px;
+    display: block;
+    object-fit: contain;
+}
+
+.badge--indicator span{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}

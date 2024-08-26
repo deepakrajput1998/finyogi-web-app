@@ -1,0 +1,227 @@
+.talent--section{
+    display: flex;
+    column-gap: 30px;
+    overflow-x: auto;
+}
+
+.talent--section .section--card-1{
+    width: calc(100%/3 - 20px);
+    position: relative;
+    overflow: hidden;
+}
+
+.block--center{
+    display: flex;
+    justify-content: center;
+}
+
+.card--name{
+    font-size: 40px;
+    line-height: 40px;
+    color: #37393F;
+    font-weight: 700;
+    text-align: center;
+    margin: 16px 0px 30px;
+}
+
+.section-1{
+    --width:386px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-1-right{
+    width: var(--width);
+}
+
+.section-1-left{
+    width: calc(100% - var(--width));
+    padding-right: 232px;
+}
+
+.sm--text-cd{
+    font-size: 14px;
+    font-weight: 700;
+    color: #B9B9B9;
+    display: block;
+    margin-top: 15px;
+    width: min(372px,100%);
+}
+
+/* About Card */
+
+.ab--card{
+    --size:627px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ab--card-left{
+    width: var(--size);
+    padding: 113px 0px;
+    background-color: #F4F4F4;
+}
+
+.im--card{
+    width: min(354px,100%);
+    margin-left: auto;
+    padding-right: 51px;
+}
+
+.im--card img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 16px;
+}
+
+.im--card-title{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #37393F;
+    display: block;
+    margin-bottom: 9px;
+}
+
+.im--card-sub{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #7D7D7D;
+    display: block;
+    margin-bottom: 11px;
+}
+
+.line--text-title{
+    font-size: 13px;
+    line-height: 12px;
+    font-weight: 700;
+    color: #37393F;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.ab--card-right{
+    width: calc(100% - var(--size));
+    padding: 113px 0px 113px 51px;
+}
+
+.title-top-w{
+    width: 310px;
+}
+
+.cd--dd{
+    width: min(522px,100%);
+}
+
+.text-p{
+    font-size: 13.5px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #7D7D7D;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* About Card End */
+
+.cd-vistor{
+    --size:20px;
+    display: flex;
+    border: 0.75px solid #E3E3E3;
+    padding: 21px 28px;
+    margin-bottom: 23px;
+}
+
+.vi-rigth{
+    width: calc(100% - var(--size));
+    padding-left: 14px;
+}
+
+.i--title{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: normal;
+    color: #37393F;
+    display: block;
+    margin-bottom: 9px;
+}
+
+.vi--info{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #7D7D7D;
+    display: block;
+}
+
+.btn-m-about{
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #0030AD;
+    border: 0px;
+    border-radius: 4px;
+    padding: 15px 28px;
+    cursor: pointer;
+}
+
+@media (max-width:991px) {
+    .ab--card .ab--card-left,
+    .ab--card-left .im--card,
+    .ab--card-right,
+    .section-1-left,
+    .section-1-right{
+        width: 100%;
+    }
+
+    .section-1-left{
+        padding-right: 0px;
+        order: 2;
+    }
+
+    .ab--card-left .im--card{
+        padding-right: 0px;
+    }
+
+    .ab--card-left{
+        padding: 22px 0px;
+        background-color: transparent;
+    }
+
+    .ab--card-right{
+        padding: 0px;
+    }
+
+    .ab--card{
+        padding: 0 15px;
+    }
+
+    .ab--card-right .badge--tile{
+        padding-left: 18px;
+    }
+
+    .section-1-right img{
+        width: 100%;
+        display: block;
+        object-fit: contain;
+    }
+
+    .section-1-right{
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .cd--dd{
+        width: 100%;
+    }
+
+    .talent--section .section--card-1{
+        min-width: 388px;
+    }
+}

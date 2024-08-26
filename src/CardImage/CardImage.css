@@ -1,0 +1,74 @@
+.card--image{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.section--info{
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    width: calc(100% - 22px);
+    transform: translatex(-50%);
+    padding: 24px 10px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.card-1--name{
+    font-size: 25px;
+    line-height: 30px;
+    color: #37393F;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.card-1--designation{
+    font-size: 18px;
+    line-height: 21px;
+    color: #7D7D7D;
+    text-align: center;
+    font-weight: 700;
+    display: block;
+}
+
+.card-1-hover {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 48 173 / 50%);
+    max-height: 0px;
+    transition: max-height .5s ease-out, opacity .5s ease-out;
+    visibility: hidden;
+}
+
+.icon-socicl-box {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+
+.section--card-1:hover .card-1-hover{
+    max-height: 100%;
+    visibility: visible;
+}
+
+@media (max-width:768px) {
+    .card-1--name{
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .card-1--designation{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

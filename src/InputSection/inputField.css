@@ -1,0 +1,69 @@
+.input--control{
+    --label-title:23px;
+    width: 100%;
+}
+
+.input--label{
+    font-size: var(--label-title);
+    line-height: var(--label-title);
+    color: var(--typo-color-4);
+    font-weight: normal;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.input--control .input--field{
+    font-size: var(--input-text);
+    line-height: var(--input-text);
+    border: 1px solid var(--typo-color-2);
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    outline: none;
+    padding: 19px 20px;
+}
+.remember--checkbox{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox--box{
+    --checkbox-size:29px;
+    width: var(--checkbox-size);
+    height: var(--checkbox-size);
+    border-radius: 7px;
+    border: 1px solid var(--typo-color-2);
+    position: relative;
+}
+
+.remember--checkbox input[type="checkbox"]{
+    display: none;
+}
+
+.remember--checkbox:has(input:checked) .checkbox--box{
+    background-color: var(--typo-color-5);
+    border-color: var(--typo-color-5);
+}
+
+.remember--checkbox:has(input:checked) .checkbox--box::before{
+    content: "";
+    border: solid var(--typo-color-white);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 6px 3px;
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    rotate: 40deg;
+}
+
+.remember--checkbox .remember--text{
+    font-size: var(--remember-text);
+    line-height: var(--remember-text);
+    color: var(--typo-color-1);
+    font-weight: 600;
+    display: block;
+}

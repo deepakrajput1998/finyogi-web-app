@@ -1,0 +1,52 @@
+.bg--4{
+    background-color: #9FD8F5;
+}
+
+.banner--image-3{
+    width: 316px;
+    height: 498px;
+    position: absolute;
+    top: 0px;
+    right: 129px;
+}
+
+.banner--image-3 > img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:991px) {
+    .calc-ca{
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        font-weight: normal;
+    }
+    .banner--left.fv-calc{
+        width: calc(100% - 82px);
+    }
+
+    .banner--image-3{
+        width: 82px;
+        position: relative;
+        right: 0px;
+        height: unset;
+    }
+
+    .banner--image-3 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner--section.bg--4{
+        background-color: transparent;
+        padding: 0px 15px;
+    }
+    
+    .sm-bg--4{
+        background-color: #9FD8F5;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,159 @@
+body:has(.dialog--center){
+    overflow: hidden;
+}
+
+.dialog--center,
+.dialog--outer{
+    position: fixed;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: 0px;
+    background-color: transparent;
+    overflow: auto;
+    padding: 15px;
+    z-index: 9;
+}
+
+.dialog--outer{
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.dialog--body{
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    width: min(822px,100%);
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.dialog--header{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 25px 25px 0px 0px;
+    background-color: #0030AD;
+    text-align: center;
+    padding: 21px 10px;
+}
+
+.dialog--profile-logo{
+    --width:60px;
+    width: var(--width);
+    height: var(--width);
+    border-radius: var(--width);
+}
+
+.dialog--profile-logo > img{
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.dialog--profile{
+    display: flex;
+    align-items: flex-start;
+    padding: 26px 36px;
+}
+
+.dialog--left{
+    display: flex;
+    align-items: center;
+    column-gap: 19px;
+    width: calc(100% - 24px);
+}
+
+.name-profiler{
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--typo-color-4);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profiler--discripution{
+    font-size: 14px;
+    line-height: 14px;
+    color: #9C9C9C;
+    font-weight: normal;
+}
+
+.dialog--progile-name > span{
+    display: block;
+}
+
+.dialog--close{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dialog--close > div{
+    width: 100%;
+    height: 2px;
+    background-color: var(--typo-color-4);
+    border-radius: 10px;
+    position: relative;
+    rotate: 45deg;
+}
+
+.dialog--close > div::before{
+    content: '';
+    position: absolute;
+    inset: 0px;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+    rotate: 90deg;
+}
+
+.write--section {
+    padding: 0px 36px 30px;
+}
+
+.feedback--area{
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #C4C4C4;
+    resize: none;
+    padding: 16px;
+    outline: none;
+    height: 201px;
+    margin-bottom: 53px;
+    cursor: pointer;
+}
+
+.feedback--area::placeholder{
+    color:#C4C4C4;
+}
+
+.write--section button{
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    display: block;
+    width: min(327px,100%);
+    border-radius: 9px;
+    background-color: #0030AD;
+    border: 0px;
+    margin: 0 auto;
+    padding: 16px 10px;
+    cursor: pointer;
+}

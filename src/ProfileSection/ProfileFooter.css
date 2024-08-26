@@ -1,0 +1,116 @@
+.footer--profile{
+    background-color: #0030AD;
+    padding: 34px 15px 0px;
+}
+
+.logo--footer{
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.footer--center{
+    width: min(635px,100%);
+    margin: 0 auto;
+}
+
+.privancy-terms {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    justify-content: center;
+    column-gap: 5px;
+    padding: 18px 0px;
+    border-top: 1px dashed var(--typo-color-white);
+    border-bottom: 1px dashed var(--typo-color-white);
+    margin-top: 27px;
+    margin-bottom: 9px;
+}
+.privancy-terms button{
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--typo-color-white);
+    background-color: rgba(255, 255, 255, 0.10);
+    border: 0px;
+    padding: 7px 20px;
+    border-radius: 30px;
+}
+
+text.web-com{
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--typo-color-white);
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.social-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 43px;
+}
+
+.social-section ul{
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social--icon,
+.social-section ul {
+    display: flex;
+    align-items: center;
+}
+
+.social--icon{
+    column-gap: 5px;
+}
+
+.social--icon text{
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--typo-color-white);
+}
+
+.footer--copyright {
+    margin: 0 -15px;
+    background-color: #ffffff;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.footer--copyright text{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--typo-color-13);
+}
+
+.text--color-1{
+    color: #40DDB6;
+}
+
+.text--color-2{
+    color: #6B77E5;
+}
+
+@media (max-width:768px) {
+    .privancy-terms button{
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    .social--icon text{
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .social--icon img{
+        width: 19px;
+        height: 19px;
+    }
+
+    .footer--copyright text{
+        font-size: 14px;
+    }
+}
