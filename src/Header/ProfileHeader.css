@@ -31,6 +31,13 @@
     color: var(--typo-color-8);
     cursor: pointer;
 }
+.nav--items--active{
+    font-size: var(--font-nav-items);
+    line-height: var(--font-nav-items);
+    font-weight: normal;
+    color: var(--typo-color-5);
+    cursor: pointer;
+}
 
 .profile--right{
     display: flex;
