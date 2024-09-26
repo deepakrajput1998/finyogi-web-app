@@ -24,6 +24,7 @@ import RetakeQuiz from "./RetakeQuiz/RetakeQuiz.js";
 import Artical from "./SliderInput/ArticalSection/Artical.js";
 import TopicPage from "./TopicPage/TopicPage.js";
 import LoginSection from "./LoginPage/LoginSection.js";
+
 function App() {
   return (<BrowserRouter >
     <Routes basename= {'/login'} >
