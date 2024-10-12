@@ -11,9 +11,9 @@ import './FutureValueCalculator.css'
 function FutureValueCalculator() {
   return (<>
         <div className='sip--calculator-container'>
-            <div className='header--section'>
+            {/* <div className='header--section'>
                 <ProfileHeader />
-            </div>
+            </div> */}
             <div className='main--section'>
                 <div className='full-top-section'>
                     <div className='calc--search'>

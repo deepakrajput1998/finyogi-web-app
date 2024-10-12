@@ -20,7 +20,7 @@ const HeaderData = [
   { label: "Learn", path: "/learn" },
   { label: "Quiz", path: "/quiz" },
   { label: "About Us", path: "/about" },
-  { label: "Contact Us", path: "/Contact" },
+  { label: "Contact Us", path: "/contact" },
 ];
 
 function ProfileHeader() {
@@ -30,7 +30,16 @@ function ProfileHeader() {
     <>
       <header className="profile--header w-1211">
         <div className="profile--logo">
-          <img src={logo} alt="logo" width={73} height={73} />
+          <img
+            src={logo}
+            onClick={(e) => {
+              e.preventDefault();
+              navigation("/home");
+            }}
+            alt="logo"
+            width={73}
+            height={73}
+          />
         </div>
         <nav className="profile--nav">
           {HeaderData.map((item) => {
@@ -40,9 +49,7 @@ function ProfileHeader() {
                 key={item.path}
                 activeClassName="nav--items--active"
                 className={({ isActive, isPending }) =>
-                   isActive
-                    ? 'nav--items--active'
-                    :"nav--items"
+                  isActive ? "nav--items--active" : "nav--items"
                 }
               >
                 {item.label}

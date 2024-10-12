@@ -26,7 +26,9 @@ import TopicPage from "./TopicPage/TopicPage.js";
 import LoginSection from "./LoginPage/LoginSection.js";
 function App() {
   return (<BrowserRouter >
-    <Routes basename= {'/login'} >
+    <ProfileHeader />
+   
+    <Routes  basename= {'/login'} >
       <Route path="/login" element={ <LoginSection />}/>
       <Route path="/createAccount" element={<LoginSection/>}/>
       <Route path="/login" element={<CagrcCalculator/>}/>
@@ -35,8 +37,18 @@ function App() {
       <Route path="/cgrcalculator" element={<CagrcCalculator />}/>
       <Route path="/home" element={<HomePage />}/>
       <Route path="/HomePage2" element={<HomePage2 />}/>
+      <Route path="/article" element={<Artical />}/>
+      <Route path="/learn" element={<LearnPage />}/>
+      <Route path="/quiz" element={<QuizHistory />}/>
+      <Route path="/about" element={<AboutUs />}/>
+      <Route path="/contact" element={<ContactUs />}/>
+      <Route path="/sip" element={<SipCalculator />}/>
+      <Route path="/cagrc" element={<CagrcCalculator />}/>
+      <Route path="/presentValue" element={<PresentValueCalculator />}/>
+      <Route path="/futureValue" element={<FutureValueCalculator />}/>
       <Route path="/" element={<Navigate to="/login" />} />
     </Routes>
+  
     {/* <LoginPage /> */}
     {/* <MyProfile /> */}
     {/* <SipCalculator /> */}

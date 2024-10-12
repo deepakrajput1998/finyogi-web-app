@@ -20,17 +20,27 @@ import bookSample1 from "../assets/image/book-img-1.svg";
 import bookSample2 from "../assets/image/book-img-2.svg";
 import bookSample3 from "../assets/image/book-img-3.svg";
 import ProfileHeader from "../Header/ProfileHeader";
+import { Link, useNavigate } from "react-router-dom";
 
 const options = [
   { value: "chocolate", label: "Chocolate" },
   { value: "strawberry", label: "Strawberry" },
   { value: "vanilla", label: "Vanilla" },
 ];
+const calculatorsRoutes = [
+  { path: "/sip", name: "SIP", icon: investmentIcon },
+  { path: "/cagrc", name: "Cagr", icon: increaseIcon },
+  { path: "/presentValue", name: "Present Value", icon: chartIcon },
+  { path: "/futureValue", name: "Future Value", icon: trendIcon },
+];
 
 function HomePage() {
+  const navigation = useNavigate();
+  const handleRedirection = ({ name, path, options = {} }) => {
+    navigation(path, options);
+  };
   return (
     <>
-      <ProfileHeader />
       <div className="full-top-section">
         <div className="calc--search">
           <SearchSection />
@@ -44,7 +54,13 @@ function HomePage() {
               Explain about the various details of business today tomorrow and
               so on....
             </span>
-            <button type="button" className="btn-ty-more">
+            <button
+              onClick={() => {
+                navigation("/learn");
+              }}
+              type="button"
+              className="btn-ty-more"
+            >
               Learn More
             </button>
           </div>
@@ -56,30 +72,19 @@ function HomePage() {
       <div className="calculator--box">
         <span className="text--cal">Calculator</span>
         <div className="cal--wrapper">
-          <div className="cal--items active--item">
-            <div className="cal--icon">
-              <img src={investmentIcon} />
-            </div>
-            <span className="cal--title">SIP</span>
-          </div>
-          <div className="cal--items">
-            <div className="cal--icon">
-              <img src={trendIcon} />
-            </div>
-            <span className="cal--title">Future Value</span>
-          </div>
-          <div className="cal--items">
-            <div className="cal--icon">
-              <img src={chartIcon} />
-            </div>
-            <span className="cal--title">Present Value</span>
-          </div>
-          <div className="cal--items">
-            <div className="cal--icon">
-              <img src={increaseIcon} />
-            </div>
-            <span className="cal--title">Cagr</span>
-          </div>
+          {calculatorsRoutes.map((calculatorsRoute) => {
+            return (
+              <Link
+                className="cal--items active--item"
+                to={calculatorsRoute.path}
+              >
+                <div className="cal--icon">
+                  <img src={calculatorsRoute.icon} />
+                </div>
+                <span className="cal--title">{calculatorsRoute.name}</span>
+              </Link>
+            );
+          })}
         </div>
       </div>
       <section className="tranding--sec">
