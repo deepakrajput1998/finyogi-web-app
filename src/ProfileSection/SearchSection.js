@@ -3,6 +3,7 @@ import searchIcon from '../assets/image/ProfileImages/search-icon.svg'
 import './SearchSection.css'
 
 function SearchSection() {
+
   return (<>
             <div className='search--seaction'>
                 <input type={'text'} placeholder="search" />
